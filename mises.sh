@@ -1,8 +1,10 @@
 #!/bin/bash
 clear
+echo '=============== XNODE243 ==================='
 echo -e '\e[36mNode :\e[39m' Mises Mainnet
 echo -e '\e[36mWebsite :\e[39m' www.xnode243.com
 echo "======================================="
+echo '=============== SETUP PLAY ==================='
 
 sleep 2
 
