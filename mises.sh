@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
-echo -e '\e[36mGarapan :\e[39m' Mises Mainnet
-echo -e '\e[36mWebsite :\e[39m' www.xnode9.com
+echo -e '\e[36mNode :\e[39m' Mises Mainnet
+echo -e '\e[36mWebsite :\e[39m' www.xnode243.com
 echo "======================================="
 
 sleep 2
@@ -78,11 +78,13 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_rec
 sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.misestm/config/app.toml
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.misestm/config/app.toml
 
+
 #State sync
-read BLOCK_HASH BLOCK_HEIGHT < <(echo $(curl https://e1.mises.site:443/block -s | jq -r '.result.block_id.hash,.result.block.header.height')) 
+echo '=============== STATE SYNC ==================='
+read BLOCK_HASH BLOCK_HEIGHT < <(echo $(curl https://mises-rpc.genznodes.dev:443/block -s | jq -r '.result.block_id.hash,.result.block.header.height')) 
 
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
-s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://e1.mises.site:443,https://e2.mises.site:443,https://w1.mises.site:443,https://w2.mises.site:443\"| ; \
+s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"https://mises-rpc.genznodes.dev:443,https://mises-rpc.genznodes.dev:443\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$BLOCK_HASH\"|"  ~/.misestm/config/config.toml
 
