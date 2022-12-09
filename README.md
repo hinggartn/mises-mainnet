@@ -30,7 +30,7 @@
 
 ### Install otomatis
 ```
-wget -O mises.sh https://raw.githubusercontent.com/bangpateng/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh
+wget -O mises.sh https://raw.githubusercontent.com/xnode243/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh 
 ```
 ### Load variable ke system
 ```
@@ -142,7 +142,7 @@ misestmd tx distribution withdraw-all-rewards --from=$WALLET --chain-id=$MISES_C
 ```
   * withdraw reward beserta komisi
 ```
-misestmd tx distribution withdraw-rewards $MISES_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$MISES_CHAIN_ID
+misestmd tx distribution withdraw-rewards $MISES_VALOPER_ADDRESS --from=$WALLET --commission --chain-id=$MISES_CHAIN_ID --fees=250umis
 ```
 
 ### Stop Node
