@@ -1,10 +1,10 @@
 #!/bin/bash
 clear
-echo '=============== XNODE243 ==================='
+echo '=============== HINGGARTN ====================='
 echo -e '\e[36mNode :\e[39m' Mises Mainnet
-echo -e '\e[36mWebsite :\e[39m' www.xnode243.com
-echo "======================================="
-echo '=============== SETUP PLAY ==================='
+echo -e '\e[36mWebsite :\e[39m' www.Hinggartn.wallet
+echo "==============================================="
+echo '=============== SETUP PLAY ===================='
 
 sleep 2
 
@@ -64,10 +64,10 @@ misestmd init $NODENAME --chain-id $MISES_CHAIN_ID
 
 # download genesis and addrbook
 curl https://e1.mises.site:443/genesis | jq .result.genesis > ~/.misestm/config/genesis.json
-wget -O $HOME/.misestm/config/addrbook.json https://raw.githubusercontent.com/Genz22/mainnet-node/main/mises/addrbook.json
+wget -O $HOME/.misestm/config/addrbook.json https://raw.githubusercontent.com/hinggartn/mainnet-node/main/mises/addrbook.json
 
 # set peers and seeds
-SEEDS_PEERS="1070b5c04c9b2af28aedf1b8cbeaf7e90b123464@rpc.gw.mises.site:36656"
+SEEDS_PEERS="40889503320199c676570b417b132755d0414332@rpc.gw.mises.site:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.misestm/config/config.toml
 
 # config pruning
