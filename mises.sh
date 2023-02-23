@@ -64,7 +64,7 @@ misestmd init $NODENAME --chain-id $MISES_CHAIN_ID
 
 # download genesis and addrbook
 curl https://e1.mises.site:443/genesis | jq .result.genesis > ~/.misestm/config/genesis.json
-wget -O $HOME/.misestm/config/addrbook.json https://raw.githubusercontent.com/hinggartn/mainnet-node/main/mises/addrbook.json
+wget -O $HOME/.misestm/config/addrbook.json https://raw.githubusercontent.com/hinggartn/mainnet-node/main/addrbook.json
 
 # set peers and seeds
 SEEDS_PEERS="40889503320199c676570b417b132755d0414332@rpc.gw.mises.site:26656"
