@@ -119,7 +119,7 @@ misestmd tx staking edit-validator \
   --fees 250umis \
   --from=$WALLET
 ```
- ° unjail validator
+ * unjail validator
 ```
 misestmd tx slashing unjail \
   --broadcast-mode=block \
