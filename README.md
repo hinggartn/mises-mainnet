@@ -30,7 +30,7 @@
 
 ### Install otomatis
 ```
-wget -O mises.sh https://raw.githubusercontent.com/xnode243/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh 
+wget -O mises.sh https://raw.githubusercontent.com/hinggartn/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh 
 ```
 ### Load variable ke system
 ```
