@@ -169,13 +169,3 @@ rm -rf mises.sh && \
 rm -rf .misestm && \
 rm -rf $(which misestmd)
 ```
-Pipped by
-Total Received
-$0
-Be the first to PIP
-Event
-Log 내용
-
-Log 내용
-
-Log 내용
