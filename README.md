@@ -8,7 +8,7 @@
 
 [Dokumen resmi](https://github.com/mises-id/mises-tm)
 
-[Server Discord ](https://discord.gg/Eh2j3Ddz)
+[Server Discord ](https://discord.gg/JRE4nsaG)
 
 [Form Register Validator](https://docs.google.com/forms/u/0/d/e/1FAIpQLSdTqmA_ZfzIB5rWPI_GVA5X7joPG7ZKI5pU-VreI3_BhY0dtQ/viewform?usp=form_confirm)
 
