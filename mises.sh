@@ -33,7 +33,7 @@ sudo apt update && sudo apt upgrade -y
 
 echo -e "\e[1m\e[32m2. Installing dependencies... \e[0m" && sleep 1
 # packages
-sudo apt install curl build-essential git wget jq make gcc tmux chrony -y
+sudo apt install curl build-essential git wget jq make gcc tmux chrony snap -y
 
 # install go
 ver="1.19" && \
