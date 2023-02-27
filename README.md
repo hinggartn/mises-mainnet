@@ -30,7 +30,7 @@
 
 ### Install otomatis
 ```
-wget -O mises.sh https://raw.githubusercontent.com/hinggartn/mises-mainnet/main/mises.sh && chmod +x mises.sh && ./mises.sh 
+wget -O mises-mainnet.sh https://raw.githubusercontent.com/hinggartn/mises-mainnet/main/mises-mainnet.sh && chmod +x mises-mainnet.sh && ./mises-mainnet.sh
 ```
 ### Load variable ke system
 ```
