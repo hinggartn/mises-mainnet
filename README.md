@@ -25,7 +25,9 @@
 | Komponen | Spesifikasi rekomendasi |
 |----------|---------------------|
 |Sistem Operasi|Ubuntu 20.04-22|
-
+|RAM           |32 GB          |
+|Storage       |2 TB           |
+|Bandwidth     |300mbps        |
 ### Sebelum Menjalankan Kan Node, Pastikan Anda Memiliki Mises Mainnet (Karena Butuh Token Mainnet Bukan Testnet)
 
 ### Install otomatis
