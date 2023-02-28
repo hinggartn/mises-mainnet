@@ -25,7 +25,7 @@
 | Komponen | Spesifikasi rekomendasi |
 |----------|---------------------|
 |Sistem Operasi|Ubuntu 20.04-22|
-|CPU           |16             |
+|CPU           |10             |
 |RAM           |32 GB          |
 |Storage       |2 TB           |
 |Bandwidth     |300mbps        |
